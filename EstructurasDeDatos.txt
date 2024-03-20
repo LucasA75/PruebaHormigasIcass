@@ -1,0 +1,49 @@
+Este es un documento que explica que estructuras se podrian ocupar para el hormiguero.
+
+-----
+Array:
+
+Poder agrupar todas las hormigas en un array.
+Poder agrupar todas las feromonas en un array.
+
+-----
+En el supuesto que la comida tenga diferentes tipos y estos ocupen una sala en el hormigero, para sacarlos seria una estructura de datos correcta una cola
+
+Pila:
+
+Poder sacar la comida en orden, donde por como se almacena en la sala, el ultimo en entrar seria el primero en salir.
+
+En caso de una evacuacion de emergencia del hormiguero, esta estructura nos sirviria para optimizar la salida del hormigero.
+
+--------
+Cola:
+
+Para darle tareas al Sepulturero
+
+Para seguir una ruta las hormigas, donde se ingresan a la cola las direcciones mas cercanas y estas se van sacando a como vayan llegando a destino.
+
+
+-------
+
+Arboles:
+
+Poder tener jerarquisado nuestra colonia con los diferentes tipos de hormigas, donde la reina esta en la cima y los obreros estan abajo.
+
+En el supuesto de que nuestro hormigero cuente con salas y estas tengan una jerarquia
+Hallar la jerarquia de las salas y el orden que estas tienen en la tierra.
+
+------
+
+Diccionario:
+
+Se podria hacer un diccionario para poder almacenar mensaje que dejan las hormigas  que seria el valor y la llave seria las coordenadas. 
+Ej:
+(44.50880000, 85.27480000) : "Amenaza"  
+
+
+------
+Grafo
+
+Seria una buena idea ocupar los grafos para representar las rutas que tienen las hormigas y sus bifurcaciones en los caminos
+
+
