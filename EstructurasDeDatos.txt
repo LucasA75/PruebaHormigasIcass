@@ -44,6 +44,6 @@ Ej:
 ------
 Grafo
 
-Seria una buena idea ocupar los grafos para representar las rutas que tienen las hormigas y sus bifurcaciones en los caminos
+Utilizaria los grafos para representar las rutas que tienen las hormigas y sus bifurcaciones en los caminos que estas generan.
 
 

@@ -2,11 +2,9 @@
 Creacion de inyeccion de datos a las tablas 
 */
 
-select * FROM COLONIAS;
-
 -- Agregar colonias
-INSERT INTO colonias(Nombre) 
-Values("Primera Colonia");
+INSERT INTO colonias(Nombre) Values
+("Primera Colonia");
 
 -- Agregar Comunicaciones
 INSERT INTO comunicaciones(Comunicacion) Values
@@ -32,12 +30,6 @@ INSERT INTO rutas(nombre) Values
 ("Patio de Comidas"),
 ("Nueva ruta"),
 ("Patio del vecino");
-
-
-SELECT * FROM hormigas;
-SELECT * FROM comunicaciones;
-SELECT * FROM feromonas;
-
 
 -- Agregar Hormigas
 INSERT INTO hormigas(Colonia_ID,Estado,FechaDeNacimiento,TipoDeHormiga_ID) VALUES
@@ -73,14 +65,14 @@ INSERT INTO Ruta_Feromona(Feromona_ID,Ruta_ID) VALUES
 (1,1),
 (2,1),
 (3,1),
-(4,1);
+(4,1),
+(5,2),
+(6,2);
 
 
 -- Agregar Comida
 INSERT INTO Comida(Cantidad,Colonia_ID) VALUES
 (30,1);
-
-
 
 -- Agregar Huevos
 INSERT INTO Huevos(Cantidad,Colonia_ID) VALUES
