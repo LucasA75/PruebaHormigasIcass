@@ -1,0 +1,12 @@
+Explicacion de mi modelo de Base de datos:
+
+Cree este modelo centrandome en lo mas importante, las hormigas,
+estas tienen un identificador, fecha de nacimiento, estado, pertenecen a una colonia y pueden ser solo 
+de un tipo.
+
+La colonia a la cual estas pertenecen cuenta con huevos y comida.
+
+Las hormigas dejan feromonas, pueden ser muchos o pocos, las feromonas cuentas con ubicacion (latitud, longitud) en 
+formato decimal, Hora de creacion , una hormiga es dueña de la feromona, la feromona comunica algo a las demas hormigas y ademas le agrege una hora de cambio porque la comunicacion de esta puede cambiar durante el tiempo , por lo que la hormiga dueña de la feromona, la comunicacion y la hora de cambio pueden cambiar.
+
+Las rutas que las hormigas generan tienen feromonas en ellas, ya que muchas rutas pueden tener muchas feromonas relacionadas entre si, cree una tabla intermedia que nos permite diferenciar estas de mejor manera.

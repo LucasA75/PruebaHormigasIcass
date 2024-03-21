@@ -20,7 +20,7 @@ Cola:
 
 Para darle tareas al Sepulturero
 
-Para seguir una ruta las hormigas, donde se ingresan a la cola las direcciones mas cercanas y estas se van sacando a como vayan llegando a destino.
+Para darle las tareas a la Nodriza, sobre el orden de alimentacion
 
 
 -------
@@ -45,5 +45,11 @@ Ej:
 Grafo
 
 Utilizaria los grafos para representar las rutas que tienen las hormigas y sus bifurcaciones en los caminos que estas generan.
+
+-----
+
+Listas enlazadas
+
+Esta estructura serviria para poder hacer los grupos de exploracion y como van una detras de otras, esta estructura de datos nos permite representar bien eso. Tambien en caso de algun accidente nos deja manejar el como seguiran.
 
 
