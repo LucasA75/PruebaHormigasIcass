@@ -1,10 +1,16 @@
-# Estoy suponiendo que existe ya la conexion a la base de datos
+# Estoy suponiendo que existe ya la conexion a la base de datos, hare las consultas a MOCKs que realize
+# python -m unittest discover tests para correr los tests
 
-from Clases import Hormiga
-from Clases import Hormiguero
+from controller.hormiga_controller import HormigaController
+
 
 def iniciar_terminal():
-  while True:
+    """
+    Función para iniciar el simulador de terminal.
+    Permite al usuario realizar acciones relacionadas con hormigas
+    hasta que decida salir del simulador.
+    """
+    while True:
         try:
             comando = int(mensaje_inicial())
             if comando == 4:
@@ -13,18 +19,27 @@ def iniciar_terminal():
             elif comando not in [1, 2, 3]:
                 print("Comando ingresado no es parte de los comandos válidos.")
             else:
-                print("Acción realizada según el comando:", comando)
-                if comando is 1:
+                if comando == 1:
                     print("Revisar cuantas hormigas hay")
-                if comando is 2:
-                    print("Agregar una hormiga")
-                if comando is 3:
-                    print("Eliminar una hormiga")
-                
+                    print(f"Hay {len(HormigaController().obtener_hormigas())} hormigas")
+                if comando == 2:
+                    HormigaController().agregar_hormiga()
+                if comando == 3:
+                    HormigaController().eliminar_hormiga()
+
         except ValueError:
             print("Comando ingresado no es un número entero.")
 
+        finally:
+            print()
+            print("##############################")
+            input("Presiona enter para continuar")
+                
+
 def mensaje_inicial():
+    """
+    Función para mostrar el mensaje inicial y obtener el comando del usuario.
+    """
     print("##############################")
     print()
     print("Bienvenido al simulador de hormigas")
@@ -40,5 +55,7 @@ def mensaje_inicial():
     print("##############################")
     valor = input("Comando: ")
     return valor
+
+
 
 iniciar_terminal()

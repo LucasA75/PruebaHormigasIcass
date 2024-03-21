@@ -1,9 +1,10 @@
-from Clases import Hormiga
+from clases.Hormiga import Hormiga
 
 class Hormiguero:
     
-    def __init__(self, nombre: str):
+    def __init__(self, nombre: str, id:int):
         self.nombre = nombre
+        self.id = id
         self.hormigas = {}
     
     def agregar_hormiga(self, hormiga: Hormiga):
